@@ -46,6 +46,11 @@ body {
   text-align: center;
   color: black;
   text-decoration: none;
+  transition: all 0.25s;
+}
+
+.link:hover {
+  color: rgb(137, 202, 129);
 }
 
 .divider {
@@ -85,6 +90,14 @@ body {
   display: flex;
   height: 125px;
   width: 100%;
+  font-size: 25px;
+  transition: all 0.1s;
+}
+
+html:not([data-scroll="0"]) .menu {
+  height: 50px;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+  font-size: 20px;
 }
 
 .menu-item {
@@ -92,9 +105,10 @@ body {
   width: 15%;
   padding: 2.5%;
   background-color: rgb(124, 124, 255);
+  align-items: center;
   justify-content: center;
   color: white;
-  font-size: 25px;
+  font-size: inherit;
   font-weight: bolder;
   letter-spacing: 3px;
   transition: all 0.25s;
@@ -130,4 +144,110 @@ body {
   -ms-user-select: none;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
+}
+
+/*--------------------*/
+
+.content {
+  display: flex;
+}
+
+.main-content {
+  width: 75%;
+}
+
+.sidebar {
+  position: sticky;
+  top: 200px;
+  float: left;
+  width: 10%;
+  height: fit-content;
+  margin: 75px;
+  background-color: rgb(255, 255, 255);
+}
+
+.perma-link {
+  padding-left: 5%;
+  margin-bottom: 8px;
+  display: list-item;
+  list-style: none;
+  color: rgb(192, 192, 192);
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+.perma-link:hover {
+  color: rgb(137, 202, 129);
+}
+
+.text-header {
+  font-size: 50px;
+  text-align: center;
+  margin-left: 350px;
+  margin-right: 350px;
+  border-style: solid;
+  border-top-color: white;
+  border-left-color: white;
+  border-right-color: white;
+  border-bottom-color: rgb(124, 124, 255);
+}
+
+p {
+  font-size: larger;
+}
+
+/* Footer Box */
+
+.footer {
+  margin-top: 100px;
+  height: 400px;
+  background-color: rgb(111, 111, 218);
+}
+
+/* Cookies Pop-up Box */
+
+.cookies-box {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  height: 200px;
+  background-color: rgb(124, 124, 255);
+  border-top-left-radius: 20px;
+}
+
+.cookies-text {
+  color: white;
+  margin: 20px;
+}
+
+.cookies-btns {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+}
+
+.close-cookies-btn {
+  background-color: rgb(124, 124, 255);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  font-size: 20px;
+  margin: 5%;
+  width: 40%;
+  transition: all 0.25s;
+}
+
+.close-cookies-btn:hover {
+  background-color: rgb(137, 202, 129);
+  cursor: pointer;
+  width: 45%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+}
+
+.hidden {
+  display: none;
 }
