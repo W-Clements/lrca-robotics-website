@@ -8,6 +8,8 @@ This is the template for all of the other pages. To ensure consistency, make sur
 
 ## TODO
 - Fill out basic info for all pages
-- Create Docs / Backup page
+- Fix Docs icon
+- Get a team picture for the background
+- Get a robotics logo or icon for the home button
 - Implement backup files system
 - Implement cookies and/or PW system for docs/backup page
